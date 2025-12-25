@@ -14,79 +14,94 @@
   </head>
 </html>
 
+
 <body>
-    <nav class="demo">
-        <a href="#" class="brand">
-            <span><i class="fa-solid fa-cat"></i> Whisker Knits</span>
+  <nav class="demo">
+    <a href="#" class="brand">
+      <span><i class="fa-solid fa-cat"></i> Whisker Knits</span>
+    </a>
+    <input id="bmenub" type="checkbox" class="show">
+    <label for="bmenub" class="burger pseudo button">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="menu">
+      <a href="wip.html" class="button">WIPs</a>
+      <a href="complete.html" class="button">Completed Projects</a>
+      <a href="notes.html" class="button">Nora’s Notes</a> 
+      <a href="https://www.ravelry.com/people/norahobbs03" class="button">My Ravelry</a>
+    </div>
+  </nav>
+
+  <main class="homepage">
+
+    <!-- WELCOME -->
+    <section class="welcome">
+      <h1 class="welcome-title">Whisker Knits- My Quiet Corner</h1>
+      <div class="welcome-divider">✿</div>
+      <p class="welcome-subtitle">
+        Knitting notes, personal reflections, and the small things in between — 
+        shared in hopes they might inspire someone along the way.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-card">
+      <img src="img/photoofme.jpg" class="about-photo" alt="Photo of Nora">
+
+      <div class="about-text">
+        <h2>From Me & Binns:</h2>
+        <p>
+          Hello! I’m Nora. I picked up knitting in December 2024, and it quickly 
+          became a favorite part of my days. On Whisker Knits, I hope to share not 
+          only my projects but also tips and reflections along the way.
+        </p>
+        <p>
+          I also love celebrating the things that bring me happiness, and this 
+          space is for that too. One of my greatest joys is my cat, Binns, who 
+          sits with me through every stitch. Whisker Knits is dedicated to her 
+          warmth, curiosity, and the quiet moments we share.
+        </p>
+      </div>
+
+      <img src="img/photoofbean.jpg" class="about-photo" alt="Photo of Bean the cat">
+    </section>
+
+    <!-- FEATURE LINKS -->
+    <section class="feature-links">
+      <div class="feature">
+        <h3>Works in Progress</h3>
+        <a href="wip.html">View WIPs →</a>
+      </div>
+
+      <div class="feature">
+        <h3>Knitting Playlist</h3>
+        <a href="https://open.spotify.com/playlist/4AZWgt0FCnWFpneCErpIY3?si=S9ViyijLTru7Jf7TRTLqFw">
+          Listen on Spotify →
         </a>
-        <input id="bmenub" type="checkbox" class="show">
-        <label for="bmenub" class="burger pseudo button"><i class="fa-solid fa-bars"></i></label>
-        <div class="menu">
-            <a href="wip.html" class="button">WIPs</a>
-            <a href="complete.html" class="button">Completed Projects</a>
-            <a href="notes.html" class="button icon-puzzle">Nora’s Notes</a> 
-            <a href="https://www.ravelry.com/people/norahobbs03" class="button">My Ravelry</a>
+      </div>
+    </section>
+
+    <!-- PHOTO CARDS -->
+    <section class="card-grid">
+      <div class="photo-strip">
+        <div class="polaroid">
+          <img src="img/photo1.jpg" alt="Knitting needles">
+          <p>Always nearby</p>
         </div>
-    </nav>
-
-    <main class="homepage">
-        
-        <!-- WELCOME HEADER -->
-        <h1 class="welcome-title">Welcome to Whisker Knits!</h1>
-
-        <!-- INTRO CARD -->
-        <section class="intro-card">
-            <img src="img/photoofme.jpg" class="intro-photo" alt="Photo of Nora">
-
-            <div class="intro-text">
-                <h2>Hi! I’m Nora</h2>
-                <p>I love to knit, and my cat loves to supervise.</p>
-                <p>This is my little space to share my projects, WIPs, and all the stitches in between!</p>
-                <p>Meet Binns! Loves long naps, sitting near a warm lamp, and swatting at the tail end of my yarn. She also answers to Bean.</p>
-            </div>
-
-            <img src="img/photoofbean.jpg" class="intro-photo" alt="Photo of Binns the cat">
-        </section>
-
-        <!-- COLOR PALETTE -->
-        <div class="palette-card">
-            <h3>Current Yarn Palette Inspiration</h3>
-            <div class="swatch-wrapper">
-                <span class="swatch" style="background: #3E5482"></span>
-                <span class="swatch" style="background:#D2DAE9"></span>
-                <span class="swatch" style="background:#B2AA99"></span>
-                <span class="swatch" style="background:#332713"></span>
-            </div>
+        <div class="polaroid">
+          <img src="img/photo2.jpg" alt="Yarn project">
+          <p>Camisole No. 10</p>
         </div>
+        <div class="polaroid">
+          <img src="img/photo3.jpg" alt="Bean supervising">
+          <p>On supervision duty</p>
+        </div>
+      </div>
+    </section>
 
+  </main>
 
-        <!-- PLAYLIST -->
-        <section class="playlist-card">
-            <div class="playlist-preview">
-                <h2>Knitting Playlist</h2>
-                <a href="https://open.spotify.com/playlist/4AZWgt0FCnWFpneCErpIY3?si=S9ViyijLTru7Jf7TRTLqFw&pi=2CRRuyxrR3abH" class="playlist-link">Listen Now →</a>
-            </div>
-        </section>
-
-        <!-- PHOTO CARD GRID -->
-        <section class="card-grid">
-            <div class="photo-strip">
-                <div class="polaroid">
-                    <img src="img/photo1.jpg" alt="Knitting needles">
-                    <p>Always Watching Over!</p>
-                </div>
-                <div class="polaroid">
-                    <img src="img/photo2.jpg" alt="Yarn stash">
-                    <p>My Camisole No. 10</p>
-                </div>
-                <div class="polaroid">
-                    <img src="img/photo3.jpg" alt="Bean supervising">
-                    <p>Asleep on the Job zzzz</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>Whisker Knits by Nora & Binns</footer>
+  <footer>
+    Whisker Knits by Nora & Bean
+  </footer>
 </body>
