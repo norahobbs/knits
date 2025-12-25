@@ -1,0 +1,185 @@
+body{
+    background-color: #E6DAD1;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.demo{
+    background-color: #7a8878;
+    color: #E6DAD1;
+}
+
+.button{
+    background-color: #7a8878;
+    color: #E6DAD1;
+}
+
+.button:hover, .button:focus{
+    color: #7a8878;
+    background-color: #E6DAD1;
+}
+
+
+
+/* --- HOMEPAGE --- */
+
+.homepage {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.welcome-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+/* --- INTRO CARD --- */
+
+.intro-card {
+    background: #f8ece7;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.intro-card img.intro-photo {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #7a8878;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+/* --- PALETTE --- */
+
+
+.palette-card {
+  background: #f8ece7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  border: 3px solid black;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers child items horizontally */
+}
+
+.swatch-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;  /* center horizontally */
+  align-items: center;       /* center vertically */
+  margin-top: 15px;
+  width: 100%;
+}
+
+.swatch {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  border: 3px solid black;
+  align-items: center;
+}
+
+
+/* --- PLAYLIST --- */
+
+.playlist-card {
+    background: #f8ece7;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.playlist-iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    border: none;
+}
+
+.playlist-preview {
+
+   padding: 20px;
+   border-radius: 15px;
+   text-align: center;
+}
+
+
+.playlist-link {
+   display: inline-block;
+   margin-top: 10px;
+   text-decoration: none;
+   font-weight: 600;
+   color: #7a8878;
+}
+
+
+.playlist-link:hover, .playlist-link:focus{
+   color: #7a8878;
+   background-color: #E6DAD1;
+   padding: 5px;
+   border-radius: 10px;;
+}
+
+
+/* --- PHOTO GRID --- */
+
+.card-grid {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.photo-strip {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+.polaroid {
+   background: #f8ece7;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+   text-align: center;
+   width: 300px;
+}
+
+
+.polaroid img {
+   width: 100%;
+   border-radius: 6px;
+}
+
+
+footer{
+    background-color: #7a8878;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+}
+
+/* --- DESKTOP LAYOUT --- */
+
+@media (min-width: 768px) {
+
+    .intro-card {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
