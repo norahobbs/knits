@@ -39,10 +39,58 @@
             my diary of inspirations, yarn thoughts, and little life things ✿
         </p>
 
+        <div class="notes-search">
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search notes…">
+        </div>
+
+        <div class="note-entry" id="holiday-favorites">
+           <div class="note-date">December 29th, 2025</div>
+           <h2 class="note-heading">Holiday Favorites</h2>
+           <p>Happy holidays! I’ve been spending time with family and friends in my hometown, and I always love coming home. There’s nothing quite like my 
+            parents’ cooking and a comfy couch. I’m lucky to have a family full of great cooks, so I’ve been on dessert duty for all family dinners. No 
+            complaints from me though, I’ve always preferred baking to cooking. This year I tried two new cookie recipes: snickerdoodles, requested by my 
+            grandma, and hot cocoa cookies, just because they looked yummy. Thankfully, both were a success. If I had to recommend one, it would be the 
+            snickerdoodles. They are a classic and were a hit with everyone. 
+            </p>
+            <p>I’ve also been knitting for friends, which is something I’ve never really done before. Knitting usually takes me so long that, selfishly, I 
+            don’t want to give projects up once they’re finished. This year, though, I made three gifts and actually enjoyed the whole process! Picking 
+            patterns I thought each friend would love and appreciate and finally giving the finished project was very rewarding. My attitude toward gift 
+            knitting has definitely changed. Keeping those projects small is the key! Plus, getting to see my friends in the things I made them is just too cool. 
+            </p>
+            <p>Another holiday favorite of mine has been The Great British Bake Off. I can’t believe it took me so long to start watching it because I love a 
+            good baking show. I started with the newest season and I am a big fan of Jasmine, who ended up winning. Her flavor choices always sounded delicious, 
+            her designs and decorations were the cutest, and her outfits were just as good.
+            </p>
+            <p>Now that my gift knits are finished, I’m back to working on my cloud sweater. I’m hoping to finish it in time to wear it before the weather warms up again. 
+            I think I can do it! 
+            </p>
+           
+       </div>
+
         
+        <div class="note-entry">
+           <div class="note-date"> December 24th, 2025</div>
+           <h2 class="note-heading">Glove Archive</h2>
+           <p>December 24th: I ordered some new short circular needles for this project, and I loved them. I would so much rather use those than do magic loop. 
+                Magic loop for just the little thumb is already too much. Also, I have been making a lot of edits to this pattern. All of my changes
+                have been inspired by the Petite Knit Penny Gloves. Instead of any ribbing, I did one round of purling at both ends of the mittens. 
+                I also knit the wrist part of the gloves a little longer than the suggested four inches. All I have left right now is the thumb on 
+                one glove, then I'm done! 
+            </p>
+            <p>December 27th: I got to give these gloves to my friend Katw this morning! While working on these, I was not a huge fan of this yarn. 
+                I love the color, and I don't mind the feel of it, but it was not very forgiving to any loose stitches around the thumb pick up. But 
+                maybe thats a me problem! The first thing Kate said was that she loved the yarn, so that made me feel better! These knit up very quickly,
+                so I would totally recommend this pattern to any beginners or for any gift knit. 
+            </p>
+            <p><a class="links" href="https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/#wprm-recipe-container-14233">Snickerdoodle Recipe →</a></p>
+            <p><a class="links" href="https://www.twopeasandtheirpod.com/hot-cocoa-cookies/#wprm-recipe-container-47565 ">Hot Cocoa Cookie Recipe →</a></p>
+       </div>
 
         <div class="note-entry">
-            <div class="note-date">December 24th, 2025</div>
+            <div class="note-date">December 16th, 2025</div>
             <h2 class="note-heading">Headband Archive</h2>
             <p>December 10th: I casted this project on using a provisional cast on as suggested in the pattern.
                 I've only ever used long tail cast on, so it definitely took me a few attempts. But, I got it!
@@ -76,3 +124,18 @@
 </main>
 
 <footer>Whisker Knits by Nora and Binns</footer>
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const notes = document.querySelectorAll(".note-entry");
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+
+    notes.forEach(note => {
+      const text = note.innerText.toLowerCase();
+      note.style.display = text.includes(query) ? "block" : "none";
+    });
+  });
+</script>
+

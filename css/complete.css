@@ -80,6 +80,19 @@ footer{
   font-size: 1.3rem;
 }
 
+.notes-title {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.notes-subtitle {
+  margin-top: -10px;
+  text-align: center;
+  color: #7a8878;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
 /* --- Desktop version: side-by-side --- */
 @media (min-width: 768px) {
   .finished-item {

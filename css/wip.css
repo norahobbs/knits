@@ -102,9 +102,45 @@ footer{
     max-width: 50%;
 }
 
+.page-header {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.notes-title {
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+
+.notes-subtitle {
+  color: #7a8878;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+
+.notes-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+}
+
+.notes-subtitle {
+  text-align: center;
+  color: #7a8878;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.wip-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 
 @media (min-width: 768px) {
-  .wip-page {
+  .wip-layout {
     flex-direction: row;
     align-items: flex-start;
   }

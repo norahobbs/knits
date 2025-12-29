@@ -216,6 +216,41 @@ footer{
   text-decoration: underline;
 }
 
+.recent-note {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.recent-note-card {
+  background: #f8ece7;
+  border: 3px solid black;
+  border-radius: 18px;
+  padding: 25px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.recent-note-card h3 {
+  margin: 10px 0;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #7a8878;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
 
 /* --- DESKTOP LAYOUT --- */
 

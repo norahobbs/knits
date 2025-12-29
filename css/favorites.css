@@ -19,6 +19,21 @@ main {
   display: block;
 }
 
+.notes-search {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.notes-search input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 2px solid #7a8878;
+  font-family: "Lora", serif;
+}
+
+
 .links {
     color: #7a8878;
 }
