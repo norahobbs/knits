@@ -5,6 +5,20 @@ body{
     font-style: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: block;
+}
+
 footer{
     background-color: #7a8878;
     width: 100%;
@@ -29,16 +43,15 @@ footer{
 }
 
 .wip-page {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-  background: #fff7f9; /* soft blush to match your palette */
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  margin-top: 65px;
-  border-radius: 10px;
+  padding: 30px 20px;
+  background: #fff7f9;
+  border-radius: 15px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
+
 
 /* --- SIDEBAR (MOBILE: FULL WIDTH) --- */
 .wip-sidebar {
