@@ -221,11 +221,6 @@ footer{
   text-align: center;
 }
 
-.section-title {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
 .recent-note-card {
   background: #f8ece7;
   border: 3px solid black;
