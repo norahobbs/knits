@@ -257,7 +257,7 @@ footer{
   text-decoration: underline;
 }
 
-.welcome-link a:hover {
+.welcome-link a:hover, .welcome-link a:focus {
   background: #E6DAD1;
   border-radius: 6px;
   padding: 2px 4px;
