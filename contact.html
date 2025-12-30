@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leave Me a Note | Whisker Knits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Whisker Knits: My Blog and Knitting Notes">
+  <meta name="keywords" content="knitting, knitting blog, cozy crafts, WIPs, projects, cats">   <meta name="author" content="Nora Hobbs">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/contacts.css">
+</head>
+
+<body>
+
+<nav class="demo">
+    <a href="#" class="brand">
+        <span><i class="fa-solid fa-cat"></i> Whisker Knits</span>
+    </a>
+    <input id="bmenub" type="checkbox" class="show">
+    <label for="bmenub" class="burger pseudo button"><i class="fa-solid fa-bars"></i></label>
+    <div class="menu">
+        <a href="index.html" class="button icon-puzzle">Home</a>
+        <a href="wip.html" class="button icon-puzzle">WIP</a>
+        <a href="complete.html" class="button icon-puzzle">Completed Projects</a> 
+        <a href="notes.html" class="button icon-puzzle">Nora's Notes</a>
+        <a href="https://www.ravelry.com/people/norahobbs03" class="button">My Ravelry</a>
+    </div>
+</nav>
+
+<body>
+
+  <main class="contact-page">
+
+    <header class="page-header">
+      <h1 class="notes-title">Leave Me a Note</h1>
+      <p class="notes-subtitle">
+        a small message or just a hello! ✿
+      </p>
+    </header>
+
+    <div class="contact-container">
+      <form id="contact-form">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Note</button>
+        <p id="form-status"></p>
+
+      </form>
+    </div>
+
+  </main>
+
+  <footer>Whisker Knits by Nora and Binns</footer>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      status.innerText = "Sending your message...";
+
+      const data = new FormData(form);
+      const action = "https://script.google.com/macros/s/AKfycbzOPoB51qzhdw-QitO6zpEciNaIgq6FbpPnImlKkCFPVBc_3Zw2ONjcGc8D_f9p71ET/exec";
+
+      fetch(action, {
+        method: "POST",
+        body: data,
+        mode: "no-cors",
+      })
+      .then(() => {
+        status.innerText = "Message sent!";
+        form.reset();
+      })
+      .catch(() => {
+        status.innerText = "Oops! Try that again!.";
+      });
+    });
+  </script>
+
+</body>
+</html>

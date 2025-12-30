@@ -246,6 +246,23 @@ footer{
   text-decoration: underline;
 }
 
+.welcome-link {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.welcome-link a {
+  color: #7a8878;
+  text-decoration: underline;
+}
+
+.welcome-link a:hover {
+  background: #E6DAD1;
+  border-radius: 6px;
+  padding: 2px 4px;
+}
+
 
 /* --- DESKTOP LAYOUT --- */
 
