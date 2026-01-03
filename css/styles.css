@@ -264,6 +264,17 @@ footer{
 }
 
 
+.next-note {
+  text-align: center;
+  color: #7a8878;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+
+
+
 /* --- DESKTOP LAYOUT --- */
 
 @media (min-width: 768px) {
