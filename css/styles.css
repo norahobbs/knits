@@ -204,6 +204,14 @@ footer{
   text-align: center;
 }
 
+.currently {
+  background: #f8ece7;
+  border: 3px solid black;
+  border-radius: 18px;
+  padding: 25px;
+  text-align: center;
+}
+
 .feature a {
   display: inline-block;
   margin-top: 10px;
