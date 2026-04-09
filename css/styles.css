@@ -136,6 +136,12 @@ footer{
   text-align: center;
 }
 
+.film-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   .film-grid {
     grid-template-columns: repeat(2, 1fr);
